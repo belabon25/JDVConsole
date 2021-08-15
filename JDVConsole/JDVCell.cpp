@@ -41,7 +41,7 @@ std::string JDVCell::toString()
 	switch (border)
 	{
 	case(true):
-		return "@";
+		return std::string("X");
 	case(false):
 		break;
 	}
@@ -50,6 +50,6 @@ std::string JDVCell::toString()
 		case(true) :
 			return "#";
 		case(false) :
-			return ".";
+			return std::string(" ");
 	}
 }
